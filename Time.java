@@ -1,3 +1,4 @@
+/*Write a Program to find difference of two Times which is given in terms of minutes and seconds and also display the time-difference in Hours  */
 import java.util.Scanner;
 import java.text.DecimalFormat;
 public class Time {
