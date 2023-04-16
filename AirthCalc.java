@@ -1,3 +1,6 @@
+/*
+Write a Java Program to build a  Arthimatic calculator ,and which should generate of 2 decimal point result
+*/
 import java.util.*;
 import java.lang.Exception;
 public class AirthCalc {
@@ -8,7 +11,9 @@ public class AirthCalc {
         float b=sc.nextFloat();
         System.out.println("Enter any opertor :");
         char ch=sc.next().charAt(0);
-       System.out.println(ch+" of "+a+" "+b+" is "+clac(a, b, ch));
+        doble res=clac(a, b, ch);
+        String str= String.format("%.2f",res);
+       System.out.println(ch+" of "+a+" "+b+" is "+str);
     }
     public static  double clac(float a,float b,char c) {
         double res=0;
