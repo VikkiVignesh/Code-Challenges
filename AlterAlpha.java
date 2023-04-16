@@ -1,3 +1,4 @@
+/*Write a Java Program to Covert given String into Alternate Upper and Lower case Character*/
 import java.util.*;
 public class AlterAlpha {
     public static void main(String[] args) {
