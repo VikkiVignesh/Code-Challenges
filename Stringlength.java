@@ -1,3 +1,4 @@
+/*Write a Program to find  the  length of given string excluding comma and spaces */
 import java.util.*;
 public class Stringlength
 {
