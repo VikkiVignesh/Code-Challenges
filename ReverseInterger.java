@@ -8,39 +8,35 @@ public class ReverseInterger{
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter any Number : ");
         int num=sc.nextInt();
-        int res=0;
-        System.out.println(Math.pow(2, 31));
-        while(num!=1)
-        {
-            res=res*10+num%10;
-            num=num/10;
-            if(res<(Math.pow(-2,31)) &&res>(Math.pow(2,31)-1) )
-           {
-             System.out.println("Not Possible");
-           }
-            System.out.println(res+" "+num);
-        }
-        System.out.println("Reversed Number is : "+res);
+        System.out.pritnln("Reverse of Number is : "+reverse(num));
          
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
+        // System.out.println(Integer.MAX_VALUE);   -> Displays the Maximum limit of integer 
+        // System.out.println(Integer.MIN_VALUE);  -> Displays the Minimum limit of Integer
         
         sc.close();
     }
-
+// here they clearly mention that number should in the range of -2^31 to 2^31
     static int reverse(int x)
     {
         int res=0;
-        while(x!=-1)
-        {
-            res=res*10+x%10;
-            x=x/10;
+        int rem; //for storing remainder value
+        while(x!=0)
+        {   rem=x%10;
+            x=x/10
+             // 2^31-1=2,14,74,83,647  ,here can can observer that last digit is 7 .
+             if(res>Integer.MAX_VALUE /10 || (res==Integer.MAX_VALUE /10 && x>7)
+                {
+                    return 0;
+                }
+                
+              // -2^31=-2,14,74,83,6478 ,here can can observer that last digit is 8 . but while dividing the number using Modulus opertor we are getting -8 so -8 is last digit here.
+                if(res<Integer.MAX_VALUE /10 || (res==Integer.MAX_VALUE /10 && x<-8)
+                {
+                    return 0;
+                }
+            if(res>
+            res=res*10+rem;
         }
-        if(x>(Math.pow(-2,31)) &&x<(Math.pow(2,31)-1) )
-        {
-          return res;
-        }
-        else
-          return 0;     
+          return res;     
     }
 }
