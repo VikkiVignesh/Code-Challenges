@@ -12,8 +12,18 @@ public class SwapChars {
         {
           if(i==0 && arr[i]!=' ' || arr[i]!=' '&& arr[i-1]==' ')
           {
-
+              System.out.println(arr[i]);
+              f=i;
+          }
+          if(i==arr.length-1 && arr[i]!=' '||arr[i]!=' ' && arr[i+1]==' ')
+          {
+            System.out.println(arr[i]);
+            char temp=arr[i];
+            arr[i]=arr[f];
+            arr[f]=temp;
           }
         }
+
+        System.out.println(arr);
     }
 }
