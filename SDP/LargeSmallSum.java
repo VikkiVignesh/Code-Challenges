@@ -20,6 +20,6 @@ public class LargeSmallSum {
          index=arr.length-2;
 
         System.out.println("Second Largest from Even Position "+arr[index]);
-        System.out.println("Second smallest from odd Position "+arr[1]);
+        System.out.println("Second smallest from odd Position "+arr[3]);
     }
 }
